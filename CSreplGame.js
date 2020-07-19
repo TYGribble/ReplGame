@@ -59,9 +59,10 @@ while(rightChoiceOne ){
         console.log("GET YOUR HEAD OUT OF YOUR ASS AND FIGHT")
     } else {
         rightChoiceOne  = false
-        
+
     }
 }
+
  //   
  console.log("YOU ARE IN THE MAIN REACTOR ROOM")
  console.log("YOU SEE: ")
