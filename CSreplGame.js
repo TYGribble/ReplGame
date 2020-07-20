@@ -62,7 +62,6 @@ while(rightChoiceOne ){
 
     }
 }
-
  //   
  console.log("YOU ARE IN THE MAIN REACTOR ROOM")
  console.log("YOU SEE: ")
