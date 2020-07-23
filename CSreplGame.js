@@ -45,6 +45,7 @@ while(rightChoiceOne ){
     if (userInput.trim().toUpperCase() === "SHOOT"){
         console.log("🤯 HEAD SHOT! THE ROOM IS CLEARD")
         console.log('')
+        rightChoiceOne  = false
     } else if (userInput.trim().toUpperCase() === "COVER"){
         console.log("YOUR UNDER COVER\n"," \n"," \n","YOU SEE: \n","  A TERRORIST")
         console.log('')
@@ -58,7 +59,7 @@ while(rightChoiceOne ){
     }else if (!commands.includes(userInput.trim().toUpperCase())){
         console.log("GET YOUR HEAD OUT OF YOUR ASS AND FIGHT")
     } else {
-        rightChoiceOne  = false
+        
 
     }
 }
@@ -74,7 +75,7 @@ while(rightChoiceTwo){
     if (userInput.trim().toUpperCase() === "DEFUSE"){
         console.log("YOU HAVE DEFUSED THE BOMB, NOW FIND THE OPS! \n")
         console.log('')
-        RightChoiceTwo = false
+        rightChoiceTwo = false
     } else if (userInput.trim().toUpperCase() === "COVER"){
         console.log("WHY ARE YOU HINDING FROM THE BOMB?\n"," \n"," \n","YOU SEE: \n","  A BOMB")
         console.log('')
@@ -88,7 +89,7 @@ while(rightChoiceTwo){
     }else if (!commands.includes(userInput.trim().toUpperCase())){
          console.log("GET YOUR HEAD OUT OF YOUR ASS AND FIGHT")
     }else {
-        rightChoiceTwo = false
+        
     }
 }
 // 
@@ -105,11 +106,13 @@ let rightChoiceThree = true
 while(rightChoiceThree){
     let userInput = readlineSync.question(`\n WHAT DO YOU WANT TO DO? \n ${commands.toString()}\n`)
     if (userInput.trim().toUpperCase() === "SHOOT"){
-        if (showDown == true){
+       
             console.log('')
             console.log('')
             console.log('YOU HAVE ELIMINATED OSAMA BIN LIDEN 👳🏾‍♂️ AND HIS CRONIES!')
             console.log("AMERICA IS SAVED!! ARMED FORCES WIN!!!")
+            rightChoiceThree = false
+    
     } else if (userInput.trim().toUpperCase() === "COVER"){
         console.log("YOUR UNDER COVER\n"," \n","YOU SEE: \n","  OSAMA BIN LIDEN")
         console.log('')
@@ -119,8 +122,8 @@ while(rightChoiceThree){
     }else if (userInput.trim().toUpperCase() === "NEXT"){
         console.log("YOU MUST ELIMINATE THE THREAT  \n"," \n","YOU ARE IN MAIN CONTROL ROOM \n","YOU SEE: \n","  OSAMA BIN LIDEN" )
         console.log('')
-            RightChoiceThree = false
-        }}else if (!commands.includes(userInput.trim().toUpperCase())){
+            rightChoiceThree = false
+        }else if (!commands.includes(userInput.trim().toUpperCase())){
             console.log("GET YOUR HEAD OUT OF YOUR ASS AND FIGHT")
         }
-}
+    }
