@@ -121,11 +121,6 @@ let rightChoiceThree = true
 while(rightChoiceThree){
     let userInput = readlineSync.question(`\n WHAT DO YOU WANT TO DO? \n ${commands.toString()}\n`)
     if (userInput.trim().toUpperCase() === "SHOOT"){
-
-       
-
-        if (showDown == true){
-
             console.log('')
             console.log('')
             console.log('YOU HAVE ELIMINATED OSAMA BIN LIDEN 👳🏾‍♂️ AND HIS CRONIES!')
@@ -144,16 +139,11 @@ while(rightChoiceThree){
     }else if (userInput.trim().toUpperCase() === "NEXT"){
         console.log("YOU MUST ELIMINATE THE THREAT  \n"," \n","YOU ARE IN MAIN CONTROL ROOM \n","YOU SEE: \n","  OSAMA BIN LIDEN" )
         console.log('')
-
-            rightChoiceThree = false
         }else if (!commands.includes(userInput.trim().toUpperCase())){
             console.log("GET YOUR HEAD OUT OF YOUR ASS AND FIGHT")
         }
     }
 
-            RightChoiceThree = false
-        }}else if (!commands.includes(userInput.trim().toUpperCase())){
-            console.log("GET YOUR HEAD OUT OF YOUR ASS AND FIGHT")
-        }
-}
+           
+
 
